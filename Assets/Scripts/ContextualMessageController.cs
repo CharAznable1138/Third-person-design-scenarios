@@ -14,10 +14,15 @@ public class ContextualMessageController : MonoBehaviour
         messageText = GetComponent<TMP_Text>();
 
         canvasGroup.alpha = 0;
+
+        StartCoroutine(ShowMessage("TESTING", 5));
     }
 
-    private void ShowMessage(string _message, float _duration)
+    private IEnumerator ShowMessage(string _message, float _duration)
     {
+        canvasGroup.alpha = 1;
         messageText.text = _message;
+        yield return new WaitForSeconds(_duration);
+        canvasGroup.alpha = 0;
     }
 }
