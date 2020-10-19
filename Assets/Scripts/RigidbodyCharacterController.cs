@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class RigidbodyCharacterController : MonoBehaviour
 {
@@ -49,9 +50,8 @@ public class RigidbodyCharacterController : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, turnSpeed);
         }
     }
-    private void Update()
+    public void OnMove(InputAction.CallbackContext _context)
     {
-        input.x = Input.GetAxisRaw("Horizontal");
-        input.y = Input.GetAxisRaw("Vertical");
+        input = _context.ReadValue<Vector2>();
     }
 }
