@@ -1111,7 +1111,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh16612
+  m_Name: pb_Mesh17372
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2904,7 +2904,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125180429}
-  m_LocalRotation: {x: 0.04434042, y: 0.9527845, z: -0.1711155, w: 0.24689107}
+  m_LocalRotation: {x: 0.044340424, y: 0.9527845, z: -0.1711155, w: 0.2468911}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3894,6 +3894,7 @@ GameObject:
   - component: {fileID: 1733387235}
   - component: {fileID: 1733387234}
   - component: {fileID: 1733387239}
+  - component: {fileID: 1733387240}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4012,6 +4013,37 @@ MonoBehaviour:
     type: 2}
   movingPhysicMaterial: {fileID: 13400000, guid: 4760745bd59a0d4498aa0311211236fc,
     type: 2}
+--- !u!114 &1733387240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733387233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: aafa3ea5d22408f4589d32e566f45e0d,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1781768608
 GameObject:
   m_ObjectHideFlags: 0
@@ -5005,3 +5037,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f017c0b375e8c74c972abf11eac6d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeOutDuration: 1
